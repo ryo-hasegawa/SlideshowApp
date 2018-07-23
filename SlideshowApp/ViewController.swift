@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     let imageindex = [#imageLiteral(resourceName: "IMG1"),#imageLiteral(resourceName: "IMG2"),#imageLiteral(resourceName: "IMG3")]
     //表示する画像の配列番号
     var dispimageno = 0
+    
     //画像を配列から取得して表示するメソッド
     func dispimage() {
         let name = imageindex[dispimageno]
@@ -32,7 +33,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //最初の画像を表示しておく
-        images.image = imageindex[0]
+        dispimage()
+        //再生ボタンラベルの表示
         playbutton.setTitle("再生", for: .normal)
         
     }
@@ -93,6 +95,27 @@ class ViewController: UIViewController {
     }
     //進む戻るはそれぞれ逆の処理をさせる。
     
+    //遷移先のコントローラを取得
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let bigViewController:BIgViewController = segue.destination as! BIgViewController
+        
+        //画像を渡す
+        bigViewController.image = images.image
+    
+    //タイマーを止める
+    if timer != nil{
+        self.timer.invalidate()
+        timer = nil
+        playbutton.setTitle("再生", for: .normal)
+        goBack.isEnabled = true
+        goNext.isEnabled = true}
+    //表示中の画像を表示しておく
+    dispimage()
+    print("タップされました")
+    }
+   
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

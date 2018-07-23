@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D65B8F12104E3660096A7BE /* BIgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D65B8F02104E3660096A7BE /* BIgViewController.swift */; };
 		0D7F01792100608C00C4812A /* IMG_1525.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D7F01762100608C00C4812A /* IMG_1525.jpg */; };
 		0D7F017A2100608C00C4812A /* IMG_1528.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D7F01772100608C00C4812A /* IMG_1528.jpg */; };
 		0D7F017B2100608C00C4812A /* IMG_1522.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D7F01782100608C00C4812A /* IMG_1522.jpg */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D65B8F02104E3660096A7BE /* BIgViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIgViewController.swift; sourceTree = "<group>"; };
 		0D7F01762100608C00C4812A /* IMG_1525.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1525.jpg; path = ../../../Desktop/IMG_1525.jpg; sourceTree = "<group>"; };
 		0D7F01772100608C00C4812A /* IMG_1528.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1528.jpg; path = ../../../Desktop/IMG_1528.jpg; sourceTree = "<group>"; };
 		0D7F01782100608C00C4812A /* IMG_1522.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1522.jpg; path = ../../../Desktop/IMG_1522.jpg; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				0DACDFDE21005524005D7D62 /* AppDelegate.swift */,
 				0DACDFE021005524005D7D62 /* ViewController.swift */,
 				0DACDFE221005524005D7D62 /* Main.storyboard */,
+				0D65B8F02104E3660096A7BE /* BIgViewController.swift */,
 				0DACDFE521005526005D7D62 /* Assets.xcassets */,
 				0D7F01782100608C00C4812A /* IMG_1522.jpg */,
 				0D7F01762100608C00C4812A /* IMG_1525.jpg */,
@@ -153,6 +156,7 @@
 				0DACDFF121005D23005D7D62 /* SecondViewController.swift in Sources */,
 				0DACDFE121005524005D7D62 /* ViewController.swift in Sources */,
 				0DACDFDF21005524005D7D62 /* AppDelegate.swift in Sources */,
+				0D65B8F12104E3660096A7BE /* BIgViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
