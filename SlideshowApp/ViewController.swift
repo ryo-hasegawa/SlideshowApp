@@ -96,24 +96,24 @@ class ViewController: UIViewController {
     //進む戻るはそれぞれ逆の処理をさせる。
     
     //遷移先のコントローラを取得
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let bigViewController:BIgViewController = segue.destination as! BIgViewController
         
         //画像を渡す
         bigViewController.image = images.image
-    
-    //タイマーを止める
-    if timer != nil{
-        self.timer.invalidate()
-        timer = nil
-        playbutton.setTitle("再生", for: .normal)
-        goBack.isEnabled = true
-        goNext.isEnabled = true}
-    //表示中の画像を表示しておく
-    dispimage()
-    print("タップされました")
+        
+        //タイマーを止める
+        if timer != nil{
+            self.timer.invalidate()
+            timer = nil
+            playbutton.setTitle("再生", for: .normal)
+            goBack.isEnabled = true
+            goNext.isEnabled = true}
+        //表示中の画像を表示しておく
+        dispimage()
+        print("タップされました")
     }
-   
+    
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
     
